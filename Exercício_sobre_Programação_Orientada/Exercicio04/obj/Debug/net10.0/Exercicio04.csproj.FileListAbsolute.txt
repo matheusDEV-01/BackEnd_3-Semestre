@@ -1,0 +1,4 @@
+C:\Users\54590704811\Desktop\BackEnd_3-Semestre\Exercício_sobre_Programação_Orientada\Exercicio04\obj\Debug\net10.0\Exercicio04.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\54590704811\Desktop\BackEnd_3-Semestre\Exercício_sobre_Programação_Orientada\Exercicio04\obj\Debug\net10.0\Exercicio04.AssemblyInfoInputs.cache
+C:\Users\54590704811\Desktop\BackEnd_3-Semestre\Exercício_sobre_Programação_Orientada\Exercicio04\obj\Debug\net10.0\Exercicio04.AssemblyInfo.cs
+C:\Users\54590704811\Desktop\BackEnd_3-Semestre\Exercício_sobre_Programação_Orientada\Exercicio04\obj\Debug\net10.0\Exercicio04.csproj.CoreCompileInputs.cache
