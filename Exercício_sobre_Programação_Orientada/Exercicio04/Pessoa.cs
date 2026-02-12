@@ -8,45 +8,41 @@ namespace Exercicio04
     public class Pessoa
     {
         public string Nome;
-
         public int Idade;
 
         public Pessoa(string n, int i)
         {
-            Nome = n; //inicializar com o valor de n
-            Idade = i;  //inicializar com o valor de i
-
+            Nome = n;
+            Idade = i;
         }
 
         public Pessoa()
         {
-            idade = 0;
+            Nome = "";
+            Idade = 0;
         }
-
 
         public void DefinirIdade(int valor)
         {
             if (valor > 0)
             {
-                idade = valor;
+                Idade = valor;
             }
             else
             {
                 Console.WriteLine("Idade inválida!");
             }
-            Console.ReadLine();
         }
 
         public int ObterIdade()
         {
-            return idade;
+            return Idade;
         }
 
         public void ExibirDados()
         {
             Console.WriteLine($"Olá, meu nome é {Nome}");
-            Console.WriteLine($"Idade é {idade}");
+            Console.WriteLine($"Idade é {Idade}");
         }
-
     }
 }
