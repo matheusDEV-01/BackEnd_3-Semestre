@@ -13,22 +13,61 @@ namespace Filmes.WebAPI.Repository
         }
         public void AtualizarIdCorpo(Genero generoAtualizado)
         {
-            throw new NotImplementedException();
+            try
+            {
+            Genero generoBuscado = _context.Generos.Find(generoAtualizado.IdGenero)!;
+                if (generoBuscado != null)
+                {
+                    generoBuscado.Nome = generoAtualizado.Nome;
+                }
+                _context.Generos.Update(generoBuscado!);
+                _context.SaveChanges();
+
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
 
         public void AtualizarIdUrl(Guid id, Genero generoAtualizado)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Genero generoBuscado = _context.Generos.Find(id.ToString())!;
+
+                if (generoBuscado != null)
+                {
+                    generoBuscado.Nome = generoAtualizado.Nome;
+                }
+
+                _context.Generos.Update(generoBuscado!);
+                _context.SaveChanges();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public Genero BuscarPorId(Guid id)
         {
-            throw new NotImplementedException();
+            try
+            {
+        Genero generoBuscado = _context.Generos.Find(id.ToString())!;
+        return generoBuscado;
+
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
 
         public void Cadastrar(Genero Novogenero)
         {
             try {
+                Novogenero.IdGenero = Guid.NewGuid().ToString();
 
                 _context.Generos.Add(Novogenero);
 
@@ -43,12 +82,35 @@ namespace Filmes.WebAPI.Repository
 
         public void Delete(Guid id)
         {
-            throw new NotImplementedException();
+            try { 
+            Genero generoBuscado = _context.Generos.Find(id.ToString())!;
+                if (true)
+                {
+                  _context.Generos.Remove(generoBuscado!);
+                    
+                }
+                _context.SaveChanges();
+            }
+              catch (Exception ex)
+            {
+                throw;
+
+
+            }
         }
+
 
         public List<Genero> Listar()
         {
-            throw new NotImplementedException();
+            try
+            {
+                List<Genero> listaGeneros = _context.Generos.ToList();
+                return listaGeneros;
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }   
         }
     }
 }
