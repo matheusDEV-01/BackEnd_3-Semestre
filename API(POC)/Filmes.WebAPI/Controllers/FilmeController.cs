@@ -16,6 +16,19 @@ public class FilmeController : ControllerBase
         _filmeRepository = filmeRepository;
     }
 
+    [HttpGet("{id}")]
+    public IActionResult GetById(Guid id)
+    {
+        try
+        {
+            return Ok(_filmeRepository.BuscarPorId(id)); // Retorna o filme encontrado com status 200 OK
+        }
+        catch (Exception erro)
+        {
+            return BadRequest(erro.Message); // Retorna uma resposta de erro com status 400 Bad Request e a mensagem de erro
+        }
+    }
+
     [HttpGet]
     public IActionResult Get()
     {
@@ -29,6 +42,7 @@ public class FilmeController : ControllerBase
         }
     }
 
+
     [HttpPost]
     public IActionResult Post(Filme NovoFilme)
     {
@@ -40,6 +54,45 @@ public class FilmeController : ControllerBase
         catch (Exception e)
         {
             return BadRequest(e.Message);
+        }
+    }
+    [HttpPut("{id}")]
+    public IActionResult Put(Guid id, Filme filmeAtualizado)
+    {
+        try
+        {
+            _filmeRepository.AtualizarIdUrl(id, filmeAtualizado);
+            return NoContent();// Retorna status 204 NoContent para indicar que a atualização foi bem-sucedida, sem retornar um corpo de resposta
+        }
+        catch (Exception erro)
+        {
+            return BadRequest(erro.Message);
+        }
+    }
+    [HttpPut]
+    public IActionResult PutBody(Filme filmeAtualizado)
+    {
+        try
+        {
+            _filmeRepository.AtualizarIdCorpo(filmeAtualizado);
+            return NoContent();// Retorna status 204 NoContent para indicar que a atualização foi bem-sucedida, sem retornar um corpo de resposta
+        }
+        catch (Exception erro)
+        {
+            return BadRequest(erro.Message);
+        }
+    }
+    [HttpDelete("{id}")]
+    public IActionResult Delete(Guid id)
+    {
+        try
+        {
+            _filmeRepository.Delete(id);
+            return NoContent(); 
+        }
+        catch (Exception erro)
+        {
+            return BadRequest(erro.Message);
         }
     }
 }

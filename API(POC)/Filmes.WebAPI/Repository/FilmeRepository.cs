@@ -14,17 +14,56 @@ public class FilmeRepository : IFilmeRepository
 
     public void AtualizarIdCorpo(Filme filmeAtualizado)
     {
-        throw new NotImplementedException();
+        try
+        {
+            Filme filmeBuscado = _context.Filmes.Find(filmeAtualizado.IdFilme)!; // Busca o filme pelo ID
+            if (filmeBuscado != null)
+            {
+                filmeBuscado.Titulo = filmeAtualizado.Titulo;
+                filmeBuscado.IdGenero = filmeAtualizado.IdGenero;
+            }
+            _context.Filmes.Update(filmeBuscado!); // Atualiza o filme no contexto
+            _context.SaveChanges(); // Salva as alterações no banco de dados
+
+        }
+        catch (Exception)
+        {
+            throw;
+        }
     }
 
     public void AtualizarIdUrl(Guid id, Filme filmeAtualizado)
     {
-        throw new NotImplementedException();
+        try
+        {
+            Filme filmeBuscado = _context.Filmes.Find(id.ToString())!; // Busca o filme pelo ID
+
+            if (filmeBuscado != null)
+            {
+                filmeBuscado.Titulo = filmeAtualizado.Titulo;
+                filmeBuscado.IdGenero = filmeAtualizado.IdGenero;
+            }
+            _context.Filmes.Update(filmeBuscado!); // Atualiza o filme no contexto
+            _context.SaveChanges(); // Salva as alterações no banco de dados
+        }
+        catch (Exception)
+        {
+            throw;
+        }
     }
 
     public Filme BuscarPorId(Guid id)
     {
-        throw new NotImplementedException();
+        try
+        {
+                        Filme filme = _context.Filmes.Find(id.ToString())!;
+            return filme;
+
+        }
+        catch (Exception)
+        {
+            throw;
+        }
     }
 
     public void Cadastrar(Filme NovoFilme)
@@ -44,7 +83,20 @@ public class FilmeRepository : IFilmeRepository
 
     public void Delete(Guid id)
     {
-        throw new NotImplementedException();
+        try
+        {
+            Filme filmeBuscado = _context.Filmes.Find(id.ToString())!; // Busca o filme pelo ID
+            if (filmeBuscado != null)
+            {
+                _context.Filmes.Remove(filmeBuscado); // Remove o filme do contexto
+                _context.SaveChanges(); // Salva as alterações no banco de dados
+            }
+
+        }
+        catch (Exception)
+        {
+            throw;
+        }
     }
 
     public List<Filme> Listar()
