@@ -56,7 +56,7 @@ public class LoginController : ControllerBase
             var token = new JwtSecurityToken(
                 issuer: "api_filmes", //Emissor do token
 
-                audience: "Filmes.WebAPI", //Destinatário do token
+                audience: "api_filmes", //Destinatário do token
 
                 claims: claims, //Dados definidos nas claims
 
