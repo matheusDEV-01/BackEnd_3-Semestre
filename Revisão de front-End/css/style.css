@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+header {
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid black; */
+}
+
+/* Conteiner - usado para centralizar o conteudo do site
+*/
+
+
+.layout-grid {
+    margin: 0 auto;
+    width: 1200px;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 140px;
+    /* border: 1px solid greenyellow; */
+}
+
+/*=================================================Menu=======================================*/
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 330px;
+    /* border: 1px solid greenyellow; */
+}
+
+/* links precisam ser estilizados separadamente */
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    text-transform: bold;
+}
+
+/* ===================================Banner============================================ */
+.banner {
+    position: relative;
+    /*referencial é ele próprio*/
+    width: 100%;
+    /* height: 100%; */
+
+}
+
+.banner img {
+
+
+    width: 100%;
+}
+
+/* Get Starter */
+.banner a {
+    position: absolute;
+    /*referencial de posicionamento é o primeiro ancestral que tiver alugum position definido*/
+    top: calc((50% - 45px / 2) + 100px);
+    left: calc(50% - 155px / 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 155px;
+    height: 45px;
+    background-color: #444;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+/* ========================================reason-to-uses========================================================= */
+.reason-to-uses {
+    height: 500px;
+    border: 2px solid green;
+
+}
+
+.reason-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.reason-to-uses .reason-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    /* border: 2px solid green; */
+    
+}
+.reason-to-uses .reason-card .imagem {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #000;
+    border-radius: 50%; 
+}
+
+.reason-to-uses .reason-card h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.reason-to-uses .reason-card p{
+    color: #444;
+}
