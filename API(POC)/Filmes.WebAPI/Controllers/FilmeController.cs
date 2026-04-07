@@ -171,7 +171,7 @@ public class FilmeController : ControllerBase
         {
             var caminho = Path.Combine(caminhoPasta, filmeBuscado.Imagem);
 
-            if (System.IO.File.Exists(caminho))
+            if (System.IO.File.Exists(caminho)) 
                 System.IO.File.Delete(caminho);
           
         }

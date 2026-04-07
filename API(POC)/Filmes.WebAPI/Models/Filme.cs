@@ -10,7 +10,7 @@ namespace Filmes.WebAPI.Models;
 public partial class Filme
 {
     [Key]
-    [StringLength(40)]
+    [StringLength(40)] 
     [Unicode(false)]
     public string IdFilme { get; set; } = null!;
 

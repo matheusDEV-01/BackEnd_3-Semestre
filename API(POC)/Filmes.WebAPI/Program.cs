@@ -12,14 +12,14 @@ builder.Services.AddDbContext<FilmeContext>(options =>
 
 //Adicione o repositório ao contêiner de injeção de dependência
 builder.Services.AddScoped<IGeneroRepository, GeneroRepository>();
-builder.Services.AddScoped<IFilmeRepository, FilmeRepository>();
+builder.Services.AddScoped<IFilmeRepository, FilmeRepository>(); 
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 
 //Adicione o serviço de autenticação JWT
 builder.Services.AddAuthentication(options =>
 {
-    options.DefaultChallengeScheme = "JwtBearer";
-    options.DefaultAuthenticateScheme = "JwtBearer";
+    options.DefaultChallengeScheme = "JwtBearer"; 
+    options.DefaultAuthenticateScheme = "JwtBearer"; 
 
 })
 

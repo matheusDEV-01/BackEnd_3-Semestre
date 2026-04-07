@@ -99,11 +99,11 @@ public class FilmeRepository : IFilmeRepository
         }
     }
 
-    public List<Filme> Listar()
+    public List<Filme> Listar() 
     {
         try
         {
-            List<Filme>listaFilmes = _context.Filmes.ToList();
+            List<Filme>listaFilmes = _context.Filmes.ToList(); 
             return listaFilmes;
         }
         catch (Exception)

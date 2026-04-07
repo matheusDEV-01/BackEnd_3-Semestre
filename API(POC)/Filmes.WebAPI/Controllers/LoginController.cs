@@ -53,7 +53,7 @@ public class LoginController : ControllerBase
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
             //4 = Gerar o token
-            var token = new JwtSecurityToken(
+            var token = new JwtSecurityToken( 
                 issuer: "api_filmes", //Emissor do token
 
                 audience: "api_filmes", //Destinatário do token

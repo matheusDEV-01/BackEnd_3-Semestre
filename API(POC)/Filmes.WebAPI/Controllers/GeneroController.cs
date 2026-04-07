@@ -3,15 +3,15 @@ using Filmes.WebAPI.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Filmes.WebAPI.Controllers;
+namespace Filmes.WebAPI.Controllers; 
 
-[Route("api/[controller]")]
+[Route("api/[controller]")] 
 [ApiController]
-public class GeneroController : ControllerBase
+public class GeneroController : ControllerBase 
 {
-    private readonly IGeneroRepository _generoRepository;
+    private readonly IGeneroRepository _generoRepository; 
 
-    public GeneroController(IGeneroRepository generoRepository)
+    public GeneroController(IGeneroRepository generoRepository) 
     {
         _generoRepository = generoRepository;
     }
