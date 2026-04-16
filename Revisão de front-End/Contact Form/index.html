@@ -28,9 +28,9 @@
                     <label class="form-contact__label" for="nome">Nome</label>
                 </div>
                 <div class="form-contact__col-b">
-                    <input class="form-contact__input form-contact__input--metade" type="text" id="nome" name="nome"
+                    <input class="form-contact__input form-contact__input--metade" type="text" id="Nome" name="nome"
                         placeholder="nome">
-                    <input class="form-contact__input form-contact__input--metade" type="text" id="sobrenome"
+                    <input class="form-contact__input form-contact__input--metade" type="text" id="Sobrenome"
                         name="sobrenome" placeholder="sobrenome">
                 </div>
             </div>
@@ -39,12 +39,11 @@
                 <form class="form-contact" action="">
                     <div class="form-contact__linha">
                         <div class="form-contact__col-a">
-                            <label class="form-contact__label" for="Email">Email</label>
+                            <label class="form-contact__label" for="email">Email</label>
                         </div>
                         <div class="form-contact__col-b">
                             <input class="form-contact__input form-contact__input--inteira" type="text" id="Email"
-                                name="Email" placeholder="ex: fulano@email.com">
-
+                                name="email" placeholder="ex: fulano@email.com">
                         </div>
                     </div>
 
@@ -53,12 +52,12 @@
                             <label class="form-contact__label" for="Telefone">Telefone</label>
                         </div>
                         <div class="form-contact__col-b">
-                            <input class="form-contact__input form-contact__input--terco" type="text" id="+55"
-                                name="+55" placeholder="+55">
-                            <input class="form-contact__input form-contact__input--terco" type="text" id="ddd"
-                                name="ddd" placeholder="ddd">
+                            <input class="form-contact__input form-contact__input--terco" type="text" id="DDI"
+                                placeholder="+55" name="+55">
+                            <input class="form-contact__input form-contact__input--terco" type="text" id="DDD"
+                                name=" ddd" placeholder="ddd">
                             <input class="form-contact__input form-contact__input--terco" type="text"
-                                id="ex: 99999-9999" name="ex: 99999-9999" placeholder="ex: 99999-9999">
+                                id="Phone" name="ex: 99999-9999" placeholder="ex: 99999-9999">
                         </div>
                     </div>
 
@@ -67,11 +66,16 @@
                             <label class="form-contact__label" for="Endereco">Endereço</label>
                         </div>
                         <div class="form-contact__col-b">
-                            <input class="form-contact__input form-contact__input--quarto" type="text"
-                                id="cep: 9999-999" name="cep: 9999-999" placeholder="cep: 9999-999">
-                            <input class="form-contact__input form-contact__input--metade" type="text"
-                                id="Rua Lá de casa" name="Rua Lá de casa" placeholder="Rua Lá de casa">
-                            <input class="form-contact__input form-contact__input--quarto" type="text" id="ex: 555"
+                            <input
+                                type="number"
+                                id="Cep"
+                                class="form-contact__input form-contact__input--quarto"
+                                placeholder="cep: 9999-999"
+                                maxlength="8"
+                                onblur="buscarEndereco(this.value)">
+                            <input class="form-contact__input form-contact__input--metade" type="text" id="Rua"
+                                name="Rua Lá de casa" placeholder="Rua Lá de casa">
+                            <input class="form-contact__input form-contact__input--quarto" type="text" id="Numero"
                                 name="ex: 555" placeholder="ex: 555">
                         </div>
                     </div>
@@ -81,7 +85,7 @@
                             <label class="form-contact__label" for="nome"></label>
                         </div>
                         <div class="form-contact__col-b">
-                            <input class="form-contact__input form-contact__input--terco" type="text" id="Apart Bloco x"
+                            <input class="form-contact__input form-contact__input--terco" type="text" id="Complemento"
                                 name="Apart Bloco x" placeholder="Apart Bloco x">
                             <input class="form-contact__input form-contact__input--terco" type="text" id="Bairro"
                                 name="Bairro" placeholder="Bairro">
@@ -125,7 +129,7 @@
 
         <footer>Todos os direitos reservados</footer>
 
-<script src="./js/script.js"></script>
+        <script src="./js/script.js"></script>
 
 </body>
 
