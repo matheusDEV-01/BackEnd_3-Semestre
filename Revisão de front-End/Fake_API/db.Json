@@ -1,0 +1,65 @@
+{
+  "usuario": [
+    {
+      "id": "1",
+      "nome": "Matheus Felix",
+      "Email": "Mat@gmail.com",
+      "Idade": 18
+    },
+    {
+      "id": "QCi1yhWvhwM",
+      "nome": "Eduardo Costa",
+      "Email": "edu@gmail.com",
+      "Idade": 30
+    },
+    {
+      "id": "0k2-g2L3NWw",
+      "nome": "Joaquina",
+      "Email": "Joaquina@gmail.com",
+      "Idade": 16
+    }
+  ],
+  "Frutas": [
+    {
+     "id": "2",
+      "nome": "Eduardo Costa",
+      "Email": "edu@gmail.com",
+      "Idade": 30
+    },
+    {
+      "id": "2",
+      "nome": "Eduardo Costa",
+      "Email": "edu@gmail.com",
+      "Idade": 30
+    }
+  ],
+  "Jogos": [
+    {
+      "id": "1",
+      "nome": "Matheus Felix",
+      "Email": "Mat@gmail.com",
+      "Idade": 18
+    },
+    {
+      "id": "2",
+      "nome": "Eduardo Costa",
+      "Email": "edu@gmail.com",
+      "Idade": 30
+    }
+  ],
+  "Post": [
+    {
+      "id": "1",
+      "Texto": "Robert Abel Arboleda Escobar (Esmeraldas, 22 de outubro de 1991) é um futebolista equatoriano que atua como zagueiro. Joga pelo São Paulo e pela Seleção Equatoriana.",
+      "imagem": "https://pt.wikipedia.org/wiki/Robert_Arboleda#/media/Ficheiro:ArboledaSPFC2018.jpg",
+      "qtdCurdidas": 345
+    },
+    {
+      "id": "IfSwuHj4klM",
+      "Texto": "Jonathan Calleri (Buenos Aires, 23 de setembro de 1993) é um futebolista argentino que atua como centroavante no São Paulo.",
+      "imagem": "https://pt.wikipedia.org/wiki/Jonathan_Calleri#/media/Ficheiro:Calleri_(cropped).jpg",
+      "qtdCurdidas": 345
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
