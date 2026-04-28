@@ -85,5 +85,42 @@
       "id": "-oBUpZUv1Co"
     }
   ],
+  "Calculadora": [
+    {
+      "numero1": 78,
+      "numero2": 6,
+      "operacao": "subtracao",
+      "resultado": "72.00",
+      "id": "LBeEjwEG6Mo"
+    },
+    {
+      "numero1": 78,
+      "numero2": 6,
+      "operacao": "subtracao",
+      "resultado": "72.00",
+      "id": "BeiTXmsbR38"
+    },
+    {
+      "numero1": 100,
+      "numero2": 10,
+      "operacao": "multiplicacao",
+      "resultado": "1000.00",
+      "id": "Yo1JsVldlcM"
+    },
+    {
+      "numero1": 345,
+      "numero2": 35,
+      "operacao": "multiplicacao",
+      "resultado": "12075.00",
+      "id": "uYIR6hd9FCQ"
+    },
+    {
+      "numero1": 3456,
+      "numero2": 1213,
+      "operacao": "subtracao",
+      "resultado": "2243.00",
+      "id": "PEYBP781bRY"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }
