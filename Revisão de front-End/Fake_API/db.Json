@@ -19,34 +19,8 @@
       "Idade": 16
     }
   ],
-  "Frutas": [
-    {
-     "id": "2",
-      "nome": "Eduardo Costa",
-      "Email": "edu@gmail.com",
-      "Idade": 30
-    },
-    {
-      "id": "2",
-      "nome": "Eduardo Costa",
-      "Email": "edu@gmail.com",
-      "Idade": 30
-    }
-  ],
-  "Jogos": [
-    {
-      "id": "1",
-      "nome": "Matheus Felix",
-      "Email": "Mat@gmail.com",
-      "Idade": 18
-    },
-    {
-      "id": "2",
-      "nome": "Eduardo Costa",
-      "Email": "edu@gmail.com",
-      "Idade": 30
-    }
-  ],
+  "Frutas": [],
+  "Jogos": [],
   "Post": [
     {
       "id": "1",
@@ -63,16 +37,52 @@
   ],
   "imc": [
     {
-      "id": "1",
-      "Texto": "Robert Abel Arboleda Escobar (Esmeraldas, 22 de outubro de 1991) é um futebolista equatoriano que atua como zagueiro. Joga pelo São Paulo e pela Seleção Equatoriana.",
-      "imagem": "https://pt.wikipedia.org/wiki/Robert_Arboleda#/media/Ficheiro:ArboledaSPFC2018.jpg",
-      "qtdCurdidas": 345
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "IMC": 30.477966223242138,
+      "situacao": "Obesidade Grau I",
+      "id": "iJesluFT6nI"
     },
     {
-      "id": "IfSwuHj4klM",
-      "Texto": "Jonathan Calleri (Buenos Aires, 23 de setembro de 1993) é um futebolista argentino que atua como centroavante no São Paulo.",
-      "imagem": "https://pt.wikipedia.org/wiki/Jonathan_Calleri#/media/Ficheiro:Calleri_(cropped).jpg",
-      "qtdCurdidas": 345
+      "nome": "Matheus",
+      "altura": 1.8,
+      "peso": 76,
+      "IMC": 23.456790123456788,
+      "situacao": "Saudável",
+      "id": "5Ku327Dnl6E"
+    },
+    {
+      "nome": "TTI",
+      "altura": 1.67,
+      "peso": 70,
+      "IMC": "25.10",
+      "situacao": "Sobrepeso",
+      "id": "dOxDBE2HrJo"
+    },
+    {
+      "nome": "oi",
+      "altura": 1.67,
+      "peso": 70,
+      "IMC": "25.10",
+      "situacao": "SObrepeso",
+      "id": "sfo5l6IZbis"
+    },
+    {
+      "nome": "a",
+      "altura": 1.47,
+      "peso": 89,
+      "IMC": "41.19",
+      "situacao": "Obesidade Grau III",
+      "id": "2cGn-3czNKc"
+    },
+    {
+      "nome": "g",
+      "altura": 1.69,
+      "peso": 123,
+      "IMC": "43.07",
+      "situação": "Obesidade (grau 3)",
+      "id": "-oBUpZUv1Co"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
