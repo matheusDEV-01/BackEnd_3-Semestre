@@ -10,8 +10,8 @@ import Title from './components/Title/Title'
 function App() {
   return (
     <>
-      <Title texto = "Bem vindo, sou Titulo" /> 
-      <Title texto = "Outro titulo" />
+      <Title Nome="John" Sobrenome="Doe" texto="Bem vindo, sou Titulo" /> 
+      <Title  texto="Outro titulo" />
       <Paragrafo textoparagrafo = "Bem vindo, sou Paragrafo" />
     </>
   );

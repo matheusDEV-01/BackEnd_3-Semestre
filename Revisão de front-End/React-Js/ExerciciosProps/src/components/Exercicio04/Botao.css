@@ -1,0 +1,26 @@
+.vermelho {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none; 
+  font-size: 10px;
+  cursor: pointer; 
+}
+
+.azul {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.verde {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 10px;
+  cursor: pointer;
+}
