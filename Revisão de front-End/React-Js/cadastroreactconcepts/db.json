@@ -1,0 +1,19 @@
+{
+    "frutas": [
+        {
+            "id": 1,
+            "nome": "Maçã",
+            "quantidade": 23
+        },
+        {
+            "id": 2,
+            "nome": "Banana",
+            "quantidade": 56
+        },
+        {
+            "id": 3,
+            "nome": "Laranja",
+            "quantidade": 34
+        }
+    ]
+}
