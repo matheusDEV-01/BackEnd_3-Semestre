@@ -1,19 +1,12 @@
 {
-    "frutas": [
-        {
-            "id": 1,
-            "nome": "Maçã",
-            "quantidade": 23
-        },
-        {
-            "id": 2,
-            "nome": "Banana",
-            "quantidade": 56
-        },
-        {
-            "id": 3,
-            "nome": "Laranja",
-            "quantidade": 34
-        }
-    ]
+  "Produtos": [
+    {
+      "nome": "Geladeira",
+      "preco": 3245,
+      "imagem": "geladeira",
+      "descricao": "Geladeira Electrolux Top Freezer 2 Portas 400l Dfx44 Inox Inox",
+      "id": "p88Hli-vAJE"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
