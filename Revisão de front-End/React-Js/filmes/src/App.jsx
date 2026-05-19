@@ -1,0 +1,16 @@
+import { useState } from 'react'
+import './App.css'
+import Login from './pages/login/login'
+import CadastroFilme from './pages/cadastroFIlme/cadastroFIlme'
+import CadastroGenero from './pages/CadastroGenero/CadastroGenero'
+import Rotas from './routes/routes'
+
+function App() {
+  return (
+    <>
+      <Rotas/>
+    </>
+  )
+}
+
+export default App

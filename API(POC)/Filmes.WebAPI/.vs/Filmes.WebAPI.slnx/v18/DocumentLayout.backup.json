@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\54590704811\\Desktop\\BackEnd_3-Semestre\\API(POC)\\Filmes.WebAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2CA35350-9858-F4A7-ECB1-C0386CBD9A3E}|Filmes.WebAPI.csproj|c:\\users\\54590704811\\desktop\\backend_3-semestre\\api(poc)\\filmes.webapi\\controllers\\filmecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CA35350-9858-F4A7-ECB1-C0386CBD9A3E}|Filmes.WebAPI.csproj|solutionrelative:controllers\\filmecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2CA35350-9858-F4A7-ECB1-C0386CBD9A3E}|Filmes.WebAPI.csproj|c:\\users\\54590704811\\desktop\\backend_3-semestre\\api(poc)\\filmes.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2CA35350-9858-F4A7-ECB1-C0386CBD9A3E}|Filmes.WebAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{2CA35350-9858-F4A7-ECB1-C0386CBD9A3E}|Filmes.WebAPI.csproj|c:\\users\\54590704811\\desktop\\backend_3-semestre\\api(poc)\\filmes.webapi\\dto\\filmedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2CA35350-9858-F4A7-ECB1-C0386CBD9A3E}|Filmes.WebAPI.csproj|solutionrelative:dto\\filmedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2CA35350-9858-F4A7-ECB1-C0386CBD9A3E}|Filmes.WebAPI.csproj|c:\\users\\54590704811\\desktop\\backend_3-semestre\\api(poc)\\filmes.webapi\\controllers\\filmecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2CA35350-9858-F4A7-ECB1-C0386CBD9A3E}|Filmes.WebAPI.csproj|solutionrelative:controllers\\filmecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2CA35350-9858-F4A7-ECB1-C0386CBD9A3E}|Filmes.WebAPI.csproj|c:\\users\\54590704811\\desktop\\backend_3-semestre\\api(poc)\\filmes.webapi\\models\\filme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,12 +86,11 @@
               "RelativeToolTip": "Interfaces\\IFilmeRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T18:30:19.092Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T18:30:19.092Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\54590704811\\Desktop\\BackEnd_3-Semestre\\API(POC)\\Filmes.WebAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -99,12 +98,11 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAGYAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T18:39:38.748Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T18:39:38.748Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "FilmeDTO.cs",
               "DocumentMoniker": "C:\\Users\\54590704811\\Desktop\\BackEnd_3-Semestre\\API(POC)\\Filmes.WebAPI\\DTO\\FilmeDTO.cs",
               "RelativeDocumentMoniker": "DTO\\FilmeDTO.cs",
@@ -112,8 +110,7 @@
               "RelativeToolTip": "DTO\\FilmeDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-03T16:07:35.302Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-03T16:07:35.302Z"
             },
             {
               "$type": "Document",
@@ -125,8 +122,7 @@
               "RelativeToolTip": "Models\\Filme.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAA+wBYAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-05T13:47:41.402Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-05T13:47:41.402Z"
             },
             {
               "$type": "Document",
@@ -138,8 +134,7 @@
               "RelativeToolTip": "Repository\\FilmeRepository.cs",
               "ViewState": "AgIAAD0AAAAAAAAAAAAkwDgAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T19:00:01.673Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T19:00:01.673Z"
             },
             {
               "$type": "Document",
@@ -155,20 +150,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "FilmeController.cs",
               "DocumentMoniker": "C:\\Users\\54590704811\\Desktop\\BackEnd_3-Semestre\\API(POC)\\Filmes.WebAPI\\Controllers\\FilmeController.cs",
               "RelativeDocumentMoniker": "Controllers\\FilmeController.cs",
               "ToolTip": "C:\\Users\\54590704811\\Desktop\\BackEnd_3-Semestre\\API(POC)\\Filmes.WebAPI\\Controllers\\FilmeController.cs",
               "RelativeToolTip": "Controllers\\FilmeController.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAgwDkAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAkwIUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-24T18:42:27.174Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\54590704811\\Desktop\\BackEnd_3-Semestre\\API(POC)\\Filmes.WebAPI\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -176,8 +171,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-19T17:36:29.463Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T17:36:29.463Z"
             },
             {
               "$type": "Document",

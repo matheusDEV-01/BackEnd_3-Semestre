@@ -1,11 +1,11 @@
 {
   "Produtos": [
     {
-      "nome": "Geladeira",
-      "preco": 3245,
+      "nome": "geladeira",
+      "descricao": "aDSADFDHGF",
+      "preco": 4567,
       "imagem": "geladeira",
-      "descricao": "Geladeira Electrolux Top Freezer 2 Portas 400l Dfx44 Inox Inox",
-      "id": "p88Hli-vAJE"
+      "id": "jWM3NFC1imI"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
