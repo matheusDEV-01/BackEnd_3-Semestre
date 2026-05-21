@@ -15,6 +15,20 @@ builder.Services.AddScoped<IGeneroRepository, GeneroRepository>();
 builder.Services.AddScoped<IFilmeRepository, FilmeRepository>(); 
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 
+// CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        policy =>
+        {
+            policy.AllowAnyOrigin()
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
+        });
+});
+
+   
+
 //Adicione o serviço de autenticação JWT
 builder.Services.AddAuthentication(options =>
 {
@@ -108,6 +122,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseStaticFiles();
+
+// CORS
+app.UseCors("AllowAll");
 
 app.UseAuthentication();
 

@@ -133,9 +133,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Novogenero",
-        "Type": "Filmes.WebAPI.Models.Genero",
-        "IsRequired": true
+        "Name": "Nome",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

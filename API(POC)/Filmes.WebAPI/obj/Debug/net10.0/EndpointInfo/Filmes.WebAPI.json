@@ -216,19 +216,19 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "$ref": "#/components/schemas/Genero"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Genero"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Genero"
+                "type": "object",
+                "properties": {
+                  "Nome": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "Nome": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -464,13 +464,6 @@
             "maxLength": 100,
             "minLength": 0,
             "type": "string",
-            "nullable": true
-          },
-          "filmes": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Filme"
-            },
             "nullable": true
           }
         },

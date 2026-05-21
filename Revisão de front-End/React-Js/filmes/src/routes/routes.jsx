@@ -4,22 +4,15 @@ import {BrowserRouter, Routes, Route} from "react-router-dom"
 import { Link } from "react-router-dom"
 import Login from "../pages/login/login"
 import CadastroFilme from "../pages/cadastroFIlme/cadastroFIlme"
-import CadastroGenero from "../pages/CadastroGenero/CadastroGenero"
+import CadastroGenero from "../pages/cadastroGenero/CadastroGenero"
 
 const Rotas = () => {
     return (
         <BrowserRouter>
-
-            <nav>
-                <Link to="/">Login</Link> {""}
-                <Link to="/filme">Filmes</Link> {""}
-                <Link to="/genero">Gêneros</Link> {""}
-            </nav>
-
             <Routes>
                 <Route element={<Login />} path="/" />
-                <Route element={<CadastroFilme />} path="/filme" />
-                <Route element={<CadastroGenero />} path="/genero" />
+                <Route element={<CadastroFilme />} path="/filmes" />
+                <Route element={<CadastroGenero />} path="/generos" />
             </Routes>
 
 

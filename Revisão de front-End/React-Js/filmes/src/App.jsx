@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Login from './pages/login/login'
 import CadastroFilme from './pages/cadastroFIlme/cadastroFIlme'
-import CadastroGenero from './pages/CadastroGenero/CadastroGenero'
+import CadastroGenero from './pages/cadastroGenero/CadastroGenero'
 import Rotas from './routes/routes'
 
 function App() {
