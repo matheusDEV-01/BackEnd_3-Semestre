@@ -133,9 +133,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Nome",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "Genero",
+        "Type": "Filmes.WebAPI.DTO.GeneroDTO",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -186,8 +186,8 @@
         "IsRequired": true
       },
       {
-        "Name": "generoAtualizado",
-        "Type": "Filmes.WebAPI.Models.Genero",
+        "Name": "genero",
+        "Type": "Filmes.WebAPI.DTO.GeneroDTO",
         "IsRequired": true
       }
     ],

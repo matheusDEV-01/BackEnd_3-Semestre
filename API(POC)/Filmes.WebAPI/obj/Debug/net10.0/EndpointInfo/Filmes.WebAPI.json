@@ -216,19 +216,19 @@
         ],
         "requestBody": {
           "content": {
-            "multipart/form-data": {
+            "application/json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "Nome": {
-                    "type": "string"
-                  }
-                }
-              },
-              "encoding": {
-                "Nome": {
-                  "style": "form"
-                }
+                "$ref": "#/components/schemas/GeneroDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GeneroDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GeneroDTO"
               }
             }
           }
@@ -310,17 +310,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Genero"
+                "$ref": "#/components/schemas/GeneroDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Genero"
+                "$ref": "#/components/schemas/GeneroDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Genero"
+                "$ref": "#/components/schemas/GeneroDTO"
               }
             }
           }
@@ -463,6 +463,16 @@
           "nome": {
             "maxLength": 100,
             "minLength": 0,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GeneroDTO": {
+        "type": "object",
+        "properties": {
+          "nome": {
             "type": "string",
             "nullable": true
           }
