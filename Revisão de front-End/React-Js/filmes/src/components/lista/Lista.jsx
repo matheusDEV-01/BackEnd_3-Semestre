@@ -3,6 +3,7 @@ import "./Lista.css";
 // Importação de imagens:
 import Editar from "../../assets/img/pen-to-square-solid.svg";
 import Excluir from "../../assets/img/trash-can-regular.svg";
+import CadastroFilme from "../../pages/cadastroFIlme/cadastroFIlme";
 
 const Lista = (props) => {
     return (
@@ -18,6 +19,7 @@ const Lista = (props) => {
                             {/* tr => table row */}
                             <tr className="table_cabecalho">
                                 {/* th => table head */}
+                                <th style={{ display: props.visibilidade }}>Imagem</th>
                                 <th>Nome</th>
                                 <th style={{ display: props.visibilidade }}>Gênero</th>
                                 <th>Editar</th>
@@ -33,15 +35,21 @@ const Lista = (props) => {
                                     <tr className="item_lista" key={item.idGenero}>
                                         {/* {console.log(index)} */}
                                         {/* {console.log(item.idGenero)} */}
+                                        <td data-cell="Imagem" style={{ display: props.visibilidade }}>
+                                            {/* Segunda célula: mostra o nome do gênero caso o tipo da lista seja "filme".*/}
+                                            {/* adicionar essa linha depois de fazer o metd de lista filme: */}
+                                            <img className="img_cartaz" src={(`https://localhost:7040/imagens/${item.imagem}` == `https://localhost:7040/imagens/` || `https://localhost:7040/imagens/${item.imagem}` == `https://localhost:7040/imagens/null` || `https://localhost:7040/imagens/${item.imagem}` == `https://localhost:7040/imagens/undefined`) ? `https://localhost:7040/imagens/default.jpg` : `https://localhost:7040/imagens/${item.imagem}`} alt="Imagem" />
+                                        </td>
                                         <td data-cell="Nome">
                                             {/* Primeira célula da linha: mostra o nome (se for gênero) ou título (se for filme) */}
                                             {/* titulo == filme */}
                                             {props.tipoLista === "genero" ? item.nome : item.titulo}
                                         </td>
+
                                         <td data-cell="Gênero" style={{ display: props.visibilidade }}>
                                             {/* Segunda célula: mostra o nome do gênero caso o tipo da lista seja "filme".*/}
                                             {/* adicionar essa linha depois de fazer o metd de lista filme: */}
-                                            {props.tipoLista === "filme" ? (item.genero?.nome || '-') : '-'}
+                                            {props.tipoLista === "filme" ? (item.idGeneroNavigation?.nome || '-') : '-'}
                                         </td>
                                         <td data-cell="Editar">
                                             <button className="icon" onClick={() => (props.funcEditar(item))}>
@@ -54,16 +62,16 @@ const Lista = (props) => {
                                             </button>
                                         </td>
                                     </tr>
-                                )) 
+                                ))
                             ) : (
-                                    // Caso a lista esteja vazia ou não exista, mostra uma linha dizendo que não há registros
-                                    <tr>
-                                        <td>Nenhum registro encontrado.</td>
-                                    </tr>
-                                )
+                                // Caso a lista esteja vazia ou não exista, mostra uma linha dizendo que não há registros
+                                <tr>
+                                    <td>Nenhum registro encontrado.</td>
+                                </tr>
+                            )
                             }
-                                
-                        
+
+
                         </tbody>
                     </table>
                 </div>

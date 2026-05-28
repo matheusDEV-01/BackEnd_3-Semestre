@@ -108,7 +108,7 @@ public class FilmeController : ControllerBase
             var caminhoPasta = Path.Combine(Directory.GetCurrentDirectory(), pastaRelativa);
 
             //Deleta arquivo antigo
-            if (String.IsNullOrEmpty(filmeBuscado.Imagem))
+            if (!String.IsNullOrEmpty(filmeBuscado.Imagem))
             {
                 var caminhoAntigo = Path.Combine(caminhoPasta, filmeBuscado.Imagem);
 

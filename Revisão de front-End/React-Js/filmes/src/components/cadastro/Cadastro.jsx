@@ -26,25 +26,38 @@ const Cadastro = (props) => {
                     </div>
                     <div className="campo_cad_genero" style={{ display: props.visibilidade }}>
                         <label htmlFor="genero">Gênero</label>
-                        <select name="genero" id="">
+                        <select name="genero" id="" value={props.valorSelect} onChange={(e) => props.setValorSelect(e.target.value)}>
                             <option value="" disabled >Selecione</option>
-                            <option value="1">op 1</option>
-                            <option value="2">op 2</option>
-                            <option value="3">op 3</option>
+                            {props.listaGeneros?.map((item) => (
+                                <option key={item.idGenero} value={item.idGenero}>
+                                    {item.nome}
+                                </option>
+                            ))}
                         </select>
                     </div>
 
+                    <div className={`campo_cad_genero campo_cad_genero--${props.temadatela}`} style={{ display: props.visibilidade }}>
+                        <label htmlFor="imagem" className={`label_image label_image--${props.temadatela}`}> Selecionar Imagem </label>
+                        <input className={`input_image input_image--${props.temadatela}`} type="file" id="imagem" onChange={(e) => props.setImagem(e.target.files[0])} style={{ display: "none" }} />
+                    </div>
+
+
+
+
                     {/* {Botao Editar} */}
                     {
-                        props.btnEditar && 
-                        <Botao 
-                        nomeDoBotao="Cancelar"
-                        cancelarEdicao={props.cancelarEdicao}
-                        btnEditar={props.btnEditar}
+                        props.btnEditar &&
+                        <Botao
+                            nomeDoBotao="Cancelar"
+                            cancelarEdicao={props.cancelarEdicao}
+                            btnEditar={props.btnEditar}
                         />
                     }
-                            <Botao nomeDoBotao="Cadastrar" />
-                        </div>
+                    <Botao nomeDoBotao="Cadastrar" />
+
+
+
+                </div>
             </form>
         </section>
     )
