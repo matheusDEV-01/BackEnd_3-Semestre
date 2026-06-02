@@ -20,8 +20,6 @@
 {
     background-color: #d5243f;
     color: yellow;
-
-    /* ------------------ (tamanho e borda) ------------------ */ 
     
     height: 20px;
     width: 100px;
@@ -29,3 +27,7 @@
     
     border-radius: 15px;
 }
+
+
+
+
