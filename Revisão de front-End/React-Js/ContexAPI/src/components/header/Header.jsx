@@ -3,7 +3,11 @@ import { useContext } from "react"
 import { UsuarioContext } from "../../context/UsuarioContext.jsx"
 
 const Header = () => {
-    const {usuario} = useContext(UsuarioContext)
+    const { usuario, setUsuario } = useContext(UsuarioContext)
+    const logout = () => {
+        localStorage.removeItem("usuario") //remove o usuário do localStorage
+        setUsuario(null)
+    }
     return (
         <header>
             <nav>
@@ -13,7 +17,11 @@ const Header = () => {
                 <Link to="/cadastro">Cadastrar Produto</Link>{" "}
                 <Link to="/listar">Listar Produtos</Link>
             </nav>
-            <h1>Bem Vindo, {usuario}</h1>
+            <h1>Bem Vindo, {usuario ? usuario : "Visitante"}
+                <button
+                    onClick={logout}
+                >Sair</button>
+            </h1>
         </header>
 
     )
