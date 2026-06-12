@@ -11,7 +11,7 @@ import Botao from "../botao/Botao";
 const Cadastro = (props) => {
     return (
         <section className="section_cadastro">
-            <form onSubmit={props.funcEditar, props.funcCadastro} className="layout_grid form_cadastro">
+            <form onSubmit={props.funcCadastro} className="layout_grid form_cadastro">
                 <h1>{props.tituloCadastro}</h1>
                 <hr />
                 <div className="campos_cadastro">
@@ -26,8 +26,14 @@ const Cadastro = (props) => {
                     </div>
                     <div className="campo_cad_genero" style={{ display: props.visibilidade }}>
                         <label htmlFor="genero">Gênero</label>
-                        <select name="genero" id="" value={props.valorSelect} onChange={(e) => props.setValorSelect(e.target.value)}>
-                            <option className="campo_cad_filme" value="" disabled >Selecione</option>
+                        <select
+                            name="genero"
+                            value={props.valorSelect}
+                            onChange={(e) => props.setValorSelect(e.target.value)}
+                        >
+                            <option value="" disabled>
+                                Selecione
+                            </option>
                             {props.listaGeneros?.map((item) => (
                                 <option key={item.idGenero} value={item.idGenero}>
                                     {item.nome}
@@ -35,32 +41,28 @@ const Cadastro = (props) => {
                             ))}
                         </select>
                     </div>
+                    <div className="campo_cad_img" style={{ display: props.visibilidade }}>
+                        <label htmlFor="img">Imagem</label>
+                        <label htmlFor="img" className="custom-file-upload">
+                            Escolher imagem
+                        </label>
 
-                    <div className={`campo_cad_genero campo_cad_genero--${props.temadatela}`} style={{ display: props.visibilidade }}>
-                        <label htmlFor="imagem" className={`label_image label_image--${props.temadatela}`}> Selecionar Imagem </label>
-                        <input className={`input_image input_image--${props.temadatela}`} type="file" id="imagem" onChange={(e) => props.setImagem(e.target.files[0])} style={{ display: "none" }} />
-                    </div>
-
-
-
-
-                    {/* {Botao Editar} */}
-                    {
-                        props.btnEditar &&
-                        <Botao
-                            nomeDoBotao="Cancelar"
-                            cancelarEdicao={props.cancelarEdicao}
-                            btnEditar={props.btnEditar}
+                        <input
+                            type="file"
+                            name="img"
+                            id="img"
+                            accept="image/*"
+                            onChange={(e) => props.setImg(e.target.files[0])}
                         />
-                    }
+                    </div>
+                    {props.btnEditar && <Botao nomeDoBotao="Cancelar"
+                        cancelarEdicao={props.cancelarEdicao}
+                        btnEditar={props.btnEditar}
+                    />}
                     <Botao nomeDoBotao="Cadastrar" />
-
-
-
                 </div>
             </form>
         </section>
     )
 }
-
 export default Cadastro;

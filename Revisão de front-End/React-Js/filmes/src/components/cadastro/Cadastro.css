@@ -1,4 +1,4 @@
-.section_cadastro {
+.section_cadastro{
     background-color: #CC3F55;
     color: white;
 
@@ -6,13 +6,13 @@
 
 }
 
-.form_cadastro {
+.form_cadastro{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.form_cadastro h1 {
+.form_cadastro h1{
     text-transform: uppercase;
 }
 
@@ -25,7 +25,7 @@
     margin-top: 5px;
 }
 
-.campos_cadastro {
+.campos_cadastro{
     display: flex;
     padding-top: 60px;
 
@@ -33,12 +33,36 @@
 
     align-items: flex-end;
 }
+.campo_cad_img{
+    display: flex;
+    flex-direction: column;
+}
 
+.campo_cad_img input{
+    display: none;
+}
+
+.custom-file-upload{
+width: 200px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #73061B;
+    color: white;
+    border-radius: 6px;
+    font-weight: bolder;
+    padding: 10px 15px;
+}
+
+.custom-file-upload:hover{
+    background-color: #5a0415;
+}
 
 /* modificando o input e select */
 .campo_cad_nome input,
-.campo_cad_genero select {
-    border: none;
+.campo_cad_genero select
+{
+    border:none;
     border-radius: 6px;
     outline: none;
     padding: 0 5px;
@@ -46,56 +70,27 @@
     height: 30px;
 
     box-shadow: 1px 4px 4px 0px #00000045;
-
+    
     margin-top: 7px;
 }
 
 .campo_cad_genero,
-.campo_cad_nome {
+.campo_cad_nome{
     display: flex;
     flex-direction: column;
 }
 
 @media screen and (max-width: 880px) {
-    .campos_cadastro {
+    .campos_cadastro{
         flex-direction: column;
         align-items: center;
     }
 }
 
 @media screen and (max-width: 340px) {
-    .form_cadastro h1 {
+    .form_cadastro h1{
         font-size: 20px;
     }
 }
 
-.label_image {
-    width: 300px;
-    height: 30px;
 
-    border: none;
-    border-radius: 6px;
-    outline: none;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #771524;
-    color: #ffffff;
-}
-
-
-.item_imagem {
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
-}
-
-.img_cartaz {
-    width: 28%;
-    height: 100px !important;
-    border-radius: 10px;
-    border-radius: 10px;
-    object-fit: cover;
-    object-position: center;
-}
