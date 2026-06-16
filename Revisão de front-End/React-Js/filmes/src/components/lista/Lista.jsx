@@ -4,7 +4,11 @@ import "./Lista.css";
 import Editar from "../../assets/img/pen-to-square-solid.svg";
 import Excluir from "../../assets/img/trash-can-regular.svg";
 import Teste from "../../assets/img/fundoLogin.png";
+<<<<<<< HEAD
 import { apiPort } from "../../services/services";
+=======
+import  apiPort  from "../../services/services";
+>>>>>>> de0775d2b52858fa7568e13b8be20538e9ebe717
 
 
 const Lista = (props) => {

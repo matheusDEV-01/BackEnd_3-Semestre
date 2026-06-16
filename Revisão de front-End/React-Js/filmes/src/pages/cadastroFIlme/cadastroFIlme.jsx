@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 
+=======
+import "./CadastroFilme.css";
+>>>>>>> de0775d2b52858fa7568e13b8be20538e9ebe717
 import Header from "../../components/header/Header";
 import Fotter from "../../components/footer/Footer";
 import Cadastro from "../../components/cadastro/Cadastro";
