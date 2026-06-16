@@ -30,10 +30,7 @@ const Cadastro = (props) => {
                             <option value="" disabled>
                                 Selecione
                             </option>
-<<<<<<< HEAD
 
-=======
->>>>>>> de0775d2b52858fa7568e13b8be20538e9ebe717
                             {props.listaGeneros?.map((item) => (
                                 <option key={item.idGenero} value={item.idGenero}>
                                     {item.nome}
@@ -41,13 +38,7 @@ const Cadastro = (props) => {
                             ))}
                         </select>
                     </div>
-                    <div className="campo_cad_img" style={{ display: props.visibilidade }}>
-                        <label htmlFor="img">Imagem</label>
-                        <label htmlFor="img" className="custom-file-upload">
-                            Escolher imagem
-                        </label>
 
-<<<<<<< HEAD
                     <div className="campo_cad_img">
                         <label htmlFor="img">Imagem</label>
 
@@ -55,15 +46,12 @@ const Cadastro = (props) => {
                             Escolher imagem
                         </label>
 
-=======
->>>>>>> de0775d2b52858fa7568e13b8be20538e9ebe717
                         <input
                             type="file"
                             name="img"
                             id="img"
                             accept="image/*"
                             onChange={(e) => props.setImg(e.target.files[0])}
-<<<<<<< HEAD
                         />
                     </div>
 
@@ -86,18 +74,3 @@ const Cadastro = (props) => {
 };
 
 export default Cadastro;
-=======
-                        />
-                    </div>
-                    {props.btnEditar && <Botao nomeDoBotao="Cancelar"
-                        cancelarEdicao={props.cancelarEdicao}
-                        btnEditar={props.btnEditar}
-                    />}
-                    <Botao nomeDoBotao="Cadastrar" />
-                </div>
-            </form>
-        </section>
-    )
-}
-export default Cadastro;
->>>>>>> de0775d2b52858fa7568e13b8be20538e9ebe717
