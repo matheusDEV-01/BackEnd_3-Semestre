@@ -3,7 +3,9 @@ import "./Lista.css";
 // Importação de imagens:
 import Editar from "../../assets/img/pen-to-square-solid.svg";
 import Excluir from "../../assets/img/trash-can-regular.svg";
-import CadastroFilme from "../../pages/cadastroFIlme/cadastroFIlme";
+import Teste from "../../assets/img/fundoLogin.png";
+import { apiPort } from "../../services/services";
+
 
 const Lista = (props) => {
     return (
@@ -18,8 +20,8 @@ const Lista = (props) => {
                         <thead>
                             {/* tr => table row */}
                             <tr className="table_cabecalho">
-                                {/* th => table head */}
                                 <th style={{ display: props.visibilidade }}>Imagem</th>
+                                {/* th => table head */}
                                 <th>Nome</th>
                                 <th style={{ display: props.visibilidade }}>Gênero</th>
                                 <th>Editar</th>
@@ -32,27 +34,38 @@ const Lista = (props) => {
                             {props.lista && props.lista.length > 0 ? (
                                 // Se houver itens, faz um map (laço) para renderizar cada item da lista
                                 props.lista.map((item) => (
-                                    <tr className="item_lista" key={item.idGenero}>
+                                    <tr
+                                        className="item_lista"
+                                        key={
+                                            props.tipoLista === "genero"
+                                                ? item.idGenero
+                                                : item.idFilme
+                                        }
+                                    >
+                                        <td data-cell="Imagem" style={{ display: props.visibilidade }}>
+                                            <img
+                                                src={`https://localhost:${apiPort}/imagens/${item.imagem}`} // Ajuste a URL conforme necessário
+                                                alt="fundo"
+                                                style={{ display: props.visibilidade }}
+                                            />
+                                        </td>
                                         {/* {console.log(index)} */}
                                         {/* {console.log(item.idGenero)} */}
-                                        <td className="item_imagem" data-cell="Imagem" style={{ display: props.visibilidade }}>
-                                            {/* Segunda célula: mostra o nome do gênero caso o tipo da lista seja "filme".*/}
-                                            {/* adicionar essa linha depois de fazer o metd de lista filme: */}
-                                            <img className="img_cartaz" src={(`https://localhost:7040/imagens/${item.imagem}` == `https://localhost:7040/imagens/` || `https://localhost:7040/imagens/${item.imagem}` == `https://localhost:7040/imagens/null` || `https://localhost:7040/imagens/${item.imagem}` == `https://localhost:7040/imagens/undefined`) ? `https://localhost:7040/imagens/default.jpg` : `https://localhost:7040/imagens/${item.imagem}`} alt="Imagem" />
-                                        </td>
                                         <td data-cell="Nome">
                                             {/* Primeira célula da linha: mostra o nome (se for gênero) ou título (se for filme) */}
                                             {/* titulo == filme */}
                                             {props.tipoLista === "genero" ? item.nome : item.titulo}
                                         </td>
-
                                         <td data-cell="Gênero" style={{ display: props.visibilidade }}>
                                             {/* Segunda célula: mostra o nome do gênero caso o tipo da lista seja "filme".*/}
                                             {/* adicionar essa linha depois de fazer o metd de lista filme: */}
                                             {props.tipoLista === "filme" ? (item.idGeneroNavigation?.nome || '-') : '-'}
                                         </td>
                                         <td data-cell="Editar">
-                                            <button className="icon" onClick={() => (props.funcEditar(item))}>
+                                            <button className="icon" onClick={() => {
+                                                props.funcEditar(item)
+                                            }
+                                            }>
                                                 <img src={Editar} alt="Caneta" />
                                             </button>
                                         </td>

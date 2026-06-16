@@ -1,12 +1,10 @@
 import { useState } from 'react';
 import UsuarioContext from './UsuarioContext';
-import SenhaContext from './SenhaContext';
-import { useContext } from 'react';
+import { useEffect } from 'react';
 
 const UsuarioProvider = ({ children }) => {
-    const [senha, setSenha] = useState('');
-    const [email, setEmail] = useState('');
-    const [token, setToken] = useState('');
+    const [usuario, setUsuario] = useState(JSON.parse(localStorage.getItem("usuario")) || null);
+  
 
       useEffect(() => {
         //ao montar o componente, verifica se existe um usuário logado 
@@ -19,10 +17,8 @@ const UsuarioProvider = ({ children }) => {
         <UsuarioContext.Provider
             value={
                 {
-                    email,
-                    setEmail,
-                    token,
-                    setToken
+                    usuario,
+                    setUsuario,
                 }}>
                     
             {children}

@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\54590704811\\Desktop\\BackEnd_3-Semestre\\API(POC)\\Filmes.WebAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2CA35350-9858-F4A7-ECB1-C0386CBD9A3E}|Filmes.WebAPI.csproj|c:\\users\\54590704811\\desktop\\backend_3-semestre\\api(poc)\\filmes.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CA35350-9858-F4A7-ECB1-C0386CBD9A3E}|Filmes.WebAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2CA35350-9858-F4A7-ECB1-C0386CBD9A3E}|Filmes.WebAPI.csproj|c:\\users\\54590704811\\desktop\\backend_3-semestre\\api(poc)\\filmes.webapi\\repository\\filmerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2CA35350-9858-F4A7-ECB1-C0386CBD9A3E}|Filmes.WebAPI.csproj|solutionrelative:repository\\filmerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -28,10 +32,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{2CA35350-9858-F4A7-ECB1-C0386CBD9A3E}|Filmes.WebAPI.csproj|c:\\users\\54590704811\\desktop\\backend_3-semestre\\api(poc)\\filmes.webapi\\controllers\\generocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2CA35350-9858-F4A7-ECB1-C0386CBD9A3E}|Filmes.WebAPI.csproj|solutionrelative:controllers\\generocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2CA35350-9858-F4A7-ECB1-C0386CBD9A3E}|Filmes.WebAPI.csproj|c:\\users\\54590704811\\desktop\\backend_3-semestre\\api(poc)\\filmes.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2CA35350-9858-F4A7-ECB1-C0386CBD9A3E}|Filmes.WebAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2CA35350-9858-F4A7-ECB1-C0386CBD9A3E}|Filmes.WebAPI.csproj|c:\\users\\54590704811\\desktop\\backend_3-semestre\\api(poc)\\filmes.webapi\\dto\\generodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -81,7 +81,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -89,28 +89,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\54590704811\\Desktop\\BackEnd_3-Semestre\\API(POC)\\Filmes.WebAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\54590704811\\Desktop\\BackEnd_3-Semestre\\API(POC)\\Filmes.WebAPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAAAGoAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAGoAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T18:39:38.748Z"
+              "WhenOpened": "2026-02-19T18:39:38.748Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "FilmeRepository.cs",
               "DocumentMoniker": "C:\\Users\\54590704811\\Desktop\\BackEnd_3-Semestre\\API(POC)\\Filmes.WebAPI\\Repository\\FilmeRepository.cs",
               "RelativeDocumentMoniker": "Repository\\FilmeRepository.cs",
               "ToolTip": "C:\\Users\\54590704811\\Desktop\\BackEnd_3-Semestre\\API(POC)\\Filmes.WebAPI\\Repository\\FilmeRepository.cs",
               "RelativeToolTip": "Repository\\FilmeRepository.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAuwGkAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAuwGkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T19:00:01.673Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T19:00:01.673Z"
             },
             {
               "$type": "Document",
@@ -138,7 +138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "FilmeDTO.cs",
               "DocumentMoniker": "C:\\Users\\54590704811\\Desktop\\BackEnd_3-Semestre\\API(POC)\\Filmes.WebAPI\\DTO\\FilmeDTO.cs",
               "RelativeDocumentMoniker": "DTO\\FilmeDTO.cs",
@@ -150,7 +150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Filme.cs",
               "DocumentMoniker": "C:\\Users\\54590704811\\Desktop\\BackEnd_3-Semestre\\API(POC)\\Filmes.WebAPI\\Models\\Filme.cs",
               "RelativeDocumentMoniker": "Models\\Filme.cs",
@@ -162,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\54590704811\\Desktop\\BackEnd_3-Semestre\\API(POC)\\Filmes.WebAPI\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -174,7 +174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "FilmeController.cs",
               "DocumentMoniker": "C:\\Users\\54590704811\\Desktop\\BackEnd_3-Semestre\\API(POC)\\Filmes.WebAPI\\Controllers\\FilmeController.cs",
               "RelativeDocumentMoniker": "Controllers\\FilmeController.cs",
@@ -186,7 +186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "FilmeController.cs",
               "DocumentMoniker": "C:\\Users\\54590704811\\AppData\\Local\\SourceServer\\a667818cde8875e7ef9155ce8a11e5462f010b0b557f2abc192b2ed1b2bd2cca\\API(POC)\\Filmes.WebAPI\\Controllers\\FilmeController.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\a667818cde8875e7ef9155ce8a11e5462f010b0b557f2abc192b2ed1b2bd2cca\\API(POC)\\Filmes.WebAPI\\Controllers\\FilmeController.cs",
@@ -222,7 +222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "GeneroController.cs",
               "DocumentMoniker": "C:\\Users\\54590704811\\Desktop\\BackEnd_3-Semestre\\API(POC)\\Filmes.WebAPI\\Controllers\\GeneroController.cs",
               "RelativeDocumentMoniker": "Controllers\\GeneroController.cs",

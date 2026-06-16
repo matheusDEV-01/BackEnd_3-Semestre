@@ -2,7 +2,7 @@ import { useState } from 'react';
 import SenhaContext from './SenhaContext';
 
 const SenhaProvider = ({ children }) => {
-    const {senha, setSenha} = useContext(SenhaContext);
+    const [senha, setSenha] = useState(JSON.parse(localStorage.getItem("senha")) || null);
 
    
 

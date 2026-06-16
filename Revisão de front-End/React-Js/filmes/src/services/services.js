@@ -2,7 +2,7 @@
 import axios from "axios";
 
 // Define a porta onde a API local está rodando
-const apiPort = "7040"; //porta do swagger
+export const apiPort = "7040"; //porta do swagger
 
 // Monta a URL base para a API local, usando a porta definida
 const localApi = `https://localhost:${apiPort}/api`; //end do swagger

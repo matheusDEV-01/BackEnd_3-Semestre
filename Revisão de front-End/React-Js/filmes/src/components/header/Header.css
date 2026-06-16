@@ -1,43 +1,68 @@
-/* seletor:
-. -> classe
-# -> id
- */
-header{
+header {
     background-color: #CC3F55;
-
     height: 75px;
-
-    /* Borda: */
     box-shadow: 1px 4px 4px 0px #00000055;
     position: relative;
 }
 
-.cabecalho{
+.cabecalho {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     width: 100%;
 }
 
-.cabecalho img{
+.logo_header {
     height: 60px;
 }
 
-.link_header{
-    margin-left: 45px;
-
-    color: white;
-
-    text-decoration: none;
+.nav_header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-@media screen and (max-width: 768px){
-    .cabecalho img{
-        height: 35px;
+.link_header {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.link_header:hover {
+    opacity: 0.8;
+}
+
+.icone_usuario,
+.icone_sair {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.icone_usuario:hover,
+.icone_sair:hover {
+    transform: scale(1.15);
+}
+
+@media screen and (max-width: 768px) {
+    .logo_header {
+        height: 40px;
     }
 
-    .link_header{
-        margin-left: 10px;
+    .nav_header {
+        gap: 12px;
+    }
+
+    .link_header {
+        font-size: 14px;
+    }
+
+    .icone_usuario,
+    .icone_sair {
+        width: 22px;
+        height: 22px;
     }
 }
